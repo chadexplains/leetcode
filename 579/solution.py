@@ -1,0 +1,1 @@
+SELECT Name, SUM(Salary) AS Cumulative_Salary FROM Employee WHERE Pay_Date > DATEADD(month, 1, DATEADD(year, DATEDIFF(year, 0, Pay_Date), 0)) GROUP BY Name;
