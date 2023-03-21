@@ -1,0 +1,1 @@
+SELECT query_id, (COUNT(*) / CAST(COUNT(*) OVER(PARTITION BY query_id) AS DECIMAL(10,5))) AS percentage FROM queries WHERE rating >= 3 GROUP BY query_id;
