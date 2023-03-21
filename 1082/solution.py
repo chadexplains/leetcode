@@ -1,0 +1,1 @@
+SELECT order_id, SUM(total_price) AS total_sales_amount FROM sales GROUP BY order_id ORDER BY total_sales_amount DESC, order_id ASC;
