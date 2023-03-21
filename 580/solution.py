@@ -1,0 +1,1 @@
+SELECT d.name as department, s.major, COUNT(*) as total FROM student s JOIN department d ON s.department_id = d.id GROUP BY d.name, s.major ORDER BY department, major
