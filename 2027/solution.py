@@ -1,0 +1,7 @@
+class Solution:
+    def minimumMoves(self, s: str) -> int:
+        count = 0
+        for i in range(0, len(s), 3):
+            if s[i] == 'X':
+                count += 1
+        return count
