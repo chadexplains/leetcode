@@ -1,0 +1,1 @@
+SELECT player_id, MIN(event_date) AS min_event_date FROM Activity GROUP BY player_id
