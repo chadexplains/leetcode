@@ -1,0 +1,1 @@
+SELECT MAX(id) AS 'id' FROM tree WHERE id NOT IN (SELECT MAX(id) FROM tree);
