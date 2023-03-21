@@ -1,0 +1,1 @@
+SELECT id, month, revenue FROM department ORDER BY id, month
