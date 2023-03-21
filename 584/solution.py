@@ -1,0 +1,1 @@
+SELECT id, name FROM customer WHERE referee IS NULL;
