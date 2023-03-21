@@ -1,0 +1,1 @@
+SELECT name FROM (SELECT sender AS name, COUNT(DISTINCT receiver) AS cnt FROM friend_request GROUP BY sender) AS t ORDER BY cnt DESC LIMIT 1;
