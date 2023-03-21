@@ -1,0 +1,1 @@
+SELECT Project.project_id, Project.employee_id FROM Project JOIN Employee_Project ON Project.project_id = Employee_Project.project_id GROUP BY Project.project_id HAVING COUNT(Employee_Project.employee_id) >= 3;
