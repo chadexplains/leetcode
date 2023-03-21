@@ -1,0 +1,1 @@
+There is no single optimal Python code for this problem as it is a SQL Schema problem.
