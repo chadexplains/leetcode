@@ -1,0 +1,1 @@
+SELECT product_id, SUM(total_price) AS total_price FROM orders WHERE order_date BETWEEN '2019-01-01' AND '2020-12-31' GROUP BY product_id;
