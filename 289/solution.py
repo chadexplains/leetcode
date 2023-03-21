@@ -1,1 +1,0 @@
-Please refer to the code section of the following URL: https://leetcode.com/problems/game-of-life/solution/
