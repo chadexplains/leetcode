@@ -1,0 +1,1 @@
+SELECT SalesCity AS 'SalesCity', Name AS 'BestSalesPerson' FROM (SELECT SalesCity, Name, RANK() OVER (PARTITION BY SalesCity ORDER BY Sales DESC) AS 'Rank' FROM Salesperson JOIN Sales ON Salesperson.Name = Sales.Salesman) AS T WHERE Rank = 1;
